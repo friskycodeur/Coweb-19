@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load crispy_forms_tags %}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-pass Form</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="text-left"><button class="btn btn-outline-success active" type="button">Get your Pass</button></div>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link" href="{%url 'index' %}">What is Corona <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="{%url 'basicapp:advisory' %}">Advisory</a>
+        <a class="nav-item nav-link" href="https://www.covid19india.org/">Tracker</a>
+        <a class="nav-item nav-link" href="{%url 'basicapp:docbot' %}"><i class="fas fa-comment-alt"></i> Mr.DocBot</a>
+        <a class="nav-item nav-link" href="#"></a>
+      </div>
+    </div>
+  </nav><div class="jumbotron">
+  <h1 class="text-center">To get your E-pass </h1>
+  <h2 class="text-center">Fill out the form below!</h2></div>
+  <div class="jumbotron bg-dark text-light">
+    <form method="post">
+      {% csrf_token %}
+      {{ form|crispy }}
+      <div class="text-center">
+      <button type="submit" class="btn btn-primary btn-lg btn-block">Apply</button></div>
+    </form>
+    
+  </div>
+  <tr>
+    <td>
+    <div class="text-center bg-dark"> <br>
+    <a href="#" class="btn btn-primary">FAQ</a>
+    </div>
+    </td>
+    </tr>
+    <tr class="bottom text-light">
+    <td>
+    </td>
+    </tr>
+    <div class="bg-dark">
+    <tr class="text-light" >
+    <td><footer> <div class="text-center text-white-50">&copy; Codeur Verset </div></footer>
+    </div>
+    </td>
+    </tr>
+    </table>
+</body>
+</html>
