@@ -1,6 +1,6 @@
 # Co-Web 19 : The goto website for covid-19 info
 ## Installation:
-* Mak sure you have python 3 installed on your PC.
+* Make sure you have python 3 installed on your PC.
 * Now we need to install the essentials using the command :
 ```
 pip install django
