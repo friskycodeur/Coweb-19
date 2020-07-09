@@ -29,9 +29,10 @@ http://localhost:8000/
 * Now surf the website as you may like.
 
 ### Note :
-If there are any errors in between feel free to use Stackoverflow and Google to conquer them , as it is the coder's way ain't it mate!
+If there are any errors in between feel free to ping me. 
+Also the Chat-bot is a work in progress and would soon be fully functional.
 
 ## You can also check out the working website video here 
 [Co-Web 19](https://youtu.be/2taCjHYOFjU)
 
-## Enjoy! 
+## Did you like the Project ? Then why not star ⭐ this repo ! 
